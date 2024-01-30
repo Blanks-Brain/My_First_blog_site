@@ -1,5 +1,5 @@
 .page-header {
-    background-color: #5f209e;
+    background-color: #C25100;
     margin-top: 0;
     margin-bottom: 40px;
     padding: 20px 20px 20px 40px;
@@ -37,7 +37,7 @@ h4 {
 .top-menu,
 .top-menu:hover,
 .top-menu:visited {
-    color: #291363;
+    color: #ffffff;
     float: right;
     font-size: 26pt;
     margin-right: 20px;
@@ -59,12 +59,12 @@ h4 {
 
 .btn-secondary,
 .btn-secondary:visited {
-    color: #13a3ec;
+    color: #11bf85;
     background: none;
-    border-color: #0064c2;
+    border-color: #1ef212;
 }
 
 .btn-secondary:hover {
     color: #FFFFFF;
-    background-color: #23e1b5;
+    background-color: #16e35e;
 }
