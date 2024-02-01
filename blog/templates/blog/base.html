@@ -20,15 +20,27 @@
     <header class="page-header">
       <div class="container">
         {% if user.is_authenticated %}
+        <form action="{% url 'logout' %}" method="post" class="top-menu">
+          {% csrf_token %}
+          <small><button type="submit">Log Out</button></small>
+        </form>
         <a href="{% url 'post_new' %}" class="top-menu">
           add
         </a>
         <a href="{% url 'post_draft_list' %}" class="top-menu">
           Draft
         </a>
-        <h1><a href="/">Jobaer Blogs</a></h1>
-      </div>
-      {%endif %}
+        <p class="top-menu">Hello {{ user.username }}</p>     
+        {% else %}
+         <form action="{% url 'signup' %}" method="post" class="top-menu">
+          {% csrf_token %}
+          <small><button type="submit">SignUp</button></small>
+        </form>
+        <a href="{% url 'login' %}" class="top-menu">Login</span></a>
+         {%endif %}
+         <h1><a href="/">Jobaer Blogs</a></h1>
+        </div>
+      
     </header>
     <main class="container">
       <div class="row">
