@@ -21,7 +21,10 @@
       <div class="container">
         {% if user.is_authenticated %}
         <a href="{% url 'post_new' %}" class="top-menu">
-          {% include './icons/file-earmark-plus.svg' %}
+          add
+        </a>
+        <a href="{% url 'post_draft_list' %}" class="top-menu">
+          Draft
         </a>
         <h1><a href="/">Jobaer Blogs</a></h1>
       </div>
