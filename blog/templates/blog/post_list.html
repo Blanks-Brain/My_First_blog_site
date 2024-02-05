@@ -10,5 +10,6 @@
             <b><i>Creted by {{post.author}}</i></b>
             
         </article>
+        <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.approved_comments.count }}</a>
     {% endfor %}
 {% endblock %}
